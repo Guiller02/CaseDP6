@@ -16,7 +16,7 @@ ga('send', 'pageview');
 
 // Event tracking code
 
-$("#ID_EntreEmContato").click( function() {
+$("#ID_ContactUs").click( function() {
     ga('send', {
         hitType: 'event',
         eventCategory: 'menu',
@@ -25,6 +25,11 @@ $("#ID_EntreEmContato").click( function() {
       });
 });
 
-        
-
-        
+$("#ID_DownloadPDF").click( function() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'menu',
+        eventAction: 'download_pdf',
+        eventLabel: 'download_pdf'
+      });
+});
