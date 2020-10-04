@@ -16,7 +16,7 @@ ga('send', 'pageview');
 
 // Event tracking code
 
-$(".logo-btn-js").click( function() {
+$(".ID_EntreEmContato").click( function() {
     ga('send', {
         hitType: 'event',
         eventCategory: 'menu',
