@@ -65,12 +65,13 @@
       <li class="menu-lista-item">
         <a href="http://www.dp6.com.br/contato/" target="_blank" class="menu-lista-link menu-lista-contato">Entre em Contato
         <script>
-          gtag('send', {
-            hitType: 'event',
-            eventCategory: 'Videos',
-            eventAction: 'play',
-            eventLabel: 'Fall Campaign'
-          });
+          function handleOutboundLinkClicks(event) {
+            gtag('send', 'event', {
+              eventCategory: 'Outbound Link',
+              eventAction: 'click',
+              eventLabel: event.target.href
+            });
+          }
         </script>
         </a>
       </li>
