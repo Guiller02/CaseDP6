@@ -16,6 +16,7 @@ ga('send', 'pageview');
 
 // Event tracking code
 
+// Tracking Contact us
 $("#ID_ContactUs").click( function() {
     ga('send', {
         hitType: 'event',
@@ -25,11 +26,42 @@ $("#ID_ContactUs").click( function() {
       });
 });
 
+// Tracking Download PDF
 $("#ID_DownloadPDF").click( function() {
     ga('send', {
         hitType: 'event',
         eventCategory: 'menu',
         eventAction: 'download_pdf',
         eventLabel: 'download_pdf'
+      });
+});
+
+// Tracking Lorem click
+$("#Lorem").click( function() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'analise',
+        eventAction: 'ver_mais',
+        eventLabel: 'Lorem'
+      });
+});
+
+// Tracking Ipsum click
+$("#Ipsum").click( function() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'analise',
+        eventAction: 'ver_mais',
+        eventLabel: 'Ipsum'
+      });
+});
+
+// Tracking Dolor click
+$("#Dolor").click( function() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'analise',
+        eventAction: 'ver_mais',
+        eventLabel: 'Dolor'
       });
 });
