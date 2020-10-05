@@ -65,3 +65,49 @@ $("#Dolor").click( function() {
         eventLabel: 'Dolor'
       });
 });
+
+// Tracking nome input
+$( "#nome" ).blur(function() {
+  if ($(this).val()!= '') {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'contato',
+      eventAction: 'nome',
+      eventLabel: 'preencheu'
+    });
+  };
+});
+
+// Tracking email input
+$( "#email" ).blur(function() {
+  if ($(this).val()!= '') {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'contato',
+      eventAction: 'email',
+      eventLabel: 'preencheu'
+    });
+  };
+});
+
+// Tracking telefone input
+$( "#telefone" ).blur(function() {
+  if ($(this).val()!= '') {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'contato',
+      eventAction: 'telefone',
+      eventLabel: 'preencheu'
+    });
+  };
+});
+
+// Tracking Dolor click
+$("#aceito").click( function() {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'contato',
+    eventAction: 'aceito',
+    eventLabel: 'preencheu'
+  });
+});
