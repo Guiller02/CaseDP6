@@ -118,3 +118,22 @@ $("#aceito").click( function() {
     eventLabel: 'preencheu'
   });
 });
+
+// Tracking Dolor click
+$("#aceito").click( function() {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'contato',
+    eventAction: 'aceito',
+    eventLabel: 'preencheu'
+  });
+});
+
+$( ".contato" ).submit(function() {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'contato',
+    eventAction: 'enviado',
+    eventLabel: 'enviado'
+  });
+});
