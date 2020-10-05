@@ -109,7 +109,7 @@ $( "#telefone" ).blur(function() {
   };
 });
 
-// Tracking Dolor click
+// Tracking aceito click
 $("#aceito").click( function() {
   ga('send', {
     hitType: 'event',
@@ -119,16 +119,7 @@ $("#aceito").click( function() {
   });
 });
 
-// Tracking Dolor click
-$("#aceito").click( function() {
-  ga('send', {
-    hitType: 'event',
-    eventCategory: 'contato',
-    eventAction: 'aceito',
-    eventLabel: 'preencheu'
-  });
-});
-
+// Tracking submit form
 $( ".contato" ).submit(function() {
   ga('send', {
     hitType: 'event',
