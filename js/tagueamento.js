@@ -71,13 +71,12 @@ $( "#nome" ).blur(function() {
   let name = $(this).val();
 
   if ($.trim(name)!= '') {
-    alert('foi')
-    // ga('send', {
-    //   hitType: 'event',
-    //   eventCategory: 'contato',
-    //   eventAction: 'nome',
-    //   eventLabel: 'preencheu'
-    // });
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'contato',
+      eventAction: 'nome',
+      eventLabel: 'preencheu'
+    });
   };
 });
 
