@@ -68,19 +68,24 @@ $("#Dolor").click( function() {
 
 // Tracking nome input
 $( "#nome" ).blur(function() {
-  if ($(this).val()!= '') {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'contato',
-      eventAction: 'nome',
-      eventLabel: 'preencheu'
-    });
+  let name = $(this).val();
+
+  if ($.trim(name)!= '') {
+    alert('foi')
+    // ga('send', {
+    //   hitType: 'event',
+    //   eventCategory: 'contato',
+    //   eventAction: 'nome',
+    //   eventLabel: 'preencheu'
+    // });
   };
 });
 
 // Tracking email input
 $( "#email" ).blur(function() {
-  if ($(this).val()!= '') {
+  let email = $(this).val();
+
+  if ($.trim(email)!= '') {
     ga('send', {
       hitType: 'event',
       eventCategory: 'contato',
@@ -92,7 +97,9 @@ $( "#email" ).blur(function() {
 
 // Tracking telefone input
 $( "#telefone" ).blur(function() {
-  if ($(this).val()!= '') {
+  let telefone = $(this).val();
+
+  if ($.trim(telefone)!= '') {
     ga('send', {
       hitType: 'event',
       eventCategory: 'contato',
